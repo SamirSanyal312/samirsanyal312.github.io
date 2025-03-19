@@ -1,3 +1,4 @@
+// Theme Toggle
 document.getElementById("dark-mode-toggle").addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
 
@@ -5,7 +6,7 @@ document.getElementById("dark-mode-toggle").addEventListener("click", () => {
     themeButton.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
 });
 
-// Animated Hero Text
+// Animated Hero Text Effect
 const textArray = ["Cloud Engineer", "DevOps Specialist", "Software Developer"];
 let textIndex = 0;
 
@@ -16,3 +17,12 @@ function animateText() {
 }
 
 animateText();
+
+// Smooth Scrolling for Navigation
+document.querySelectorAll("nav ul li a").forEach(anchor => {
+    anchor.addEventListener("click", function (event) {
+        event.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        target.scrollIntoView({ behavior: "smooth" });
+    });
+});
