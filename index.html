@@ -3,145 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samir Sanyal | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
+    <title>Samir Sanyal - DevOps & Cloud Engineer</title>
 </head>
 <body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Samir Sanyal</a>
+            </div>
 
-    <!-- Navigation Bar -->
-    <header>
-        <h1>Samir Sanyal</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
         </nav>
-        <button id="dark-mode-toggle">🌙</button>
     </header>
 
-    <!-- Hero Section -->
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Samir</span><br> DevOps & Cloud Engineer</h1>
 
-<section id="hero" class="hidden">
-    <div class="hero-content">
-        <h1>Hi, I'm <span>Samir Sanyal</span></h1>
-        <p>Cloud Engineer | DevOps | Software Developer</p>
-        <a href="assets/resume.pdf" class="btn" download>Download Resume</a>
-        <div class="social-links">
-            <a href="https://linkedin.com/in/samir-sanyal" class="social-icon"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/SamirSanyal312" class="social-icon"><i class="fab fa-github"></i></a>
-        </div>
-    </div>
-    <div class="hero-img">
-        <img src="images/profile.jpg" alt="Samir Sanyal">
-    </div>
-</section>
+                <a href="mailto:samirsanyal312@gmail.com" class="button">Contact</a>
+            </div>
 
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/samir-sanyal" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/SamirSanyal312" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+            </div>
 
-    <!-- About Section -->
-    <section id="about" class="hidden">
-        <h2>About Me</h2>
-        <p>Hi!! My name is Samir Sanyal. I am currently pursuing my Masters in Computer Science from Indiana University Bloomington. Prior to graduate school I used to work as a Cloud Engineer for one of the leading company in the domain of healthcare. I have working experience in AWS and Azure. I have also worked in DevOps and cloud security. I’m currently diving deep into my Master’s in Computer Science at Indiana University Bloomington while actively seeking summer internships for 2025. My journey began with a Bachelor’s in Electronics and Computer from VIT where I first discovered my passion for technology. Since then, I’ve had the opportunity to work as a System Engineer at Dr Lal PathLabs where I tackled enterprise issues related to Azure and AWS. It was here that I learned the ins-and-outs of cloud security and identity access management (IAM), all while executing cost optimization strategies that made a real difference. During my time at Dr Lal PathLabs, I was fortunate enough to be part of projects that not only challenged me but also fueled my curiosity about cloud computing and big data. One of my proudest moments was successfully resolving complex issues that improved our cloud infrastructure's efficiency by 30%. It’s this kind of problem-solving that excites me—finding innovative solutions in the ever-evolving tech landscape. Before stepping into the world of cloud engineering, I interned at CoreEL Technologies where I explored MATLAB for image processing and machine learning concepts. This experience opened my eyes to the potential of machine learning algorithms in real-world applications. I loved experimenting with spatial transformations and Otsu's Method—it felt like being an artist with a digital canvas! Outside of my academic pursuits, I’m an avid reader who enjoys writing about technology trends. Whether it’s exploring new ML algorithms or sharing insights on cloud advancements through content writing, I find joy in connecting ideas with others. I believe that sharing knowledge is just as important as acquiring it. I’m eager to connect with like-minded professionals who share my enthusiasm for technology! If you’re looking for someone passionate about DevOps or machine learning—or if you have insights to share—feel free to reach out via email!</p>
-    </section>
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467">
+                    <g>
+                        <image class="home__blob-img" x="50" y="60" href="assets/img/profile.jpg"/>
+                    </g>
+                </svg>
+            </div>
+        </section>
 
-    <!-- Education Section -->
-    <section id="education" class="hidden">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>MS in Computer Science</strong>, Indiana University Bloomington (Aug 2024 – May 2026)</li>
-            <li><strong>BTech in Computer Science</strong>, Vellore Institute of Technology (June 2017 – July 2021)</li>
-        </ul>
-    </section>
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <h2 class="section-title">About Me</h2>
 
-    <!-- Experience Section -->
-    <section id="experience" class="hidden">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>System Engineer - Dr Lalpathlabs Ltd</h3>
-            <p>Aug 2021 – May 2024</p>
-            <ul>
-                <li>Addressed complex enterprise challenges in AWS and Azure environments, developing cost and performance optimization
-                    strategies to enhance operational efficiency across both platforms. Improved efficiency by 65%.</li>
-                <li>Implemented a cost optimization strategy resulting in a significant annual cost reduction of $6,500 in AWS services and
-                    $10,000 in Azure services.</li>
-                <li>Mastered cloud support and identity access management (IAM) while developing automation tools using SQL, Python,
-                    and PowerShell; generated streamlined workflows that increased efficiency by saving approximately 12 hours weekly.</li>
-                <li>Designed high-performance python automation scripts to automate manual daily tasks thus increasing the productivity
-                    by 45%.</li>
-                <li>Spearheaded the development of Key Query Language (KQL) queries, resulting in an 80% reduction in manual labor for
-                    data analysis tasks. This optimization streamlined processes, reducing the time required to complete tasks from hours to
-                    just 5 minutes.</li>
-                <li>Engineered a comprehensive Continuous Integration/Continuous Deployment system leveraging best practices within
-                    AWS architecture resulting in reduced lead times for new feature rollouts totaling approximately 40% efficiency
-                    improvement overall.</li>
-            </ul>
-        </div>
-    </section>
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/profile.jpg" alt="">
+                </div>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <div class="skills-container">
-            <i class="fab fa-aws" title="AWS"></i>
-            <i class="fab fa-docker" title="Docker"></i>
-            <i class="fab fa-python" title="Python"></i>
-            <i class="fab fa-react" title="React.js"></i>
-            <i class="fab fa-git-alt" title="Git & Version Control"></i>
-        </div>
-    </section>
+                <div>
+                    <h2 class="about__subtitle">I am Samir Sanyal</h2>
+                    <p class="about__text">
+                        I am currently pursuing my Master's in Computer Science at Indiana University Bloomington.
+                        Previously, I worked as a Cloud Engineer in the healthcare domain, where I gained expertise in AWS, Azure, DevOps, and Cloud Security.
+                        I am passionate about cloud computing, automation, and solving complex infrastructure problems.
+                        My experience includes designing and optimizing cloud solutions, implementing security best practices, and streamlining CI/CD pipelines.
+                    </p>  
+                </div>   
+            </div>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <img src="images/project1.png" alt="LAPD Crime Prediction">
-            <h3>LAPD Crime Prediction</h3>
-            <p>Developed a machine learning-powered crime prediction system using LAPD dataset.</p>
-            <a href="https://github.com/SamirSanyal312/LAPD-Crime-Prediction-and-Visualization-App" class="btn">View on GitHub</a>
-        </div>
-    </section>
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Technical Skills</h2>
 
-    <!-- Certifications Section -->
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>Microsoft - Certified Azure Fundamentals (July 2022)</li>
-            <li>Certified AWS Cloud Practitioner (July 2023)</li>
-            <li>Microsoft SC-900 (Jan 2024)</li>
-        </ul>
-    </section>
+            <div class="skills__container bd-grid">          
+                <div>
+                    <h2 class="skills__subtitle">Expertise</h2>
+                    <div class="skills__subtitle"><span>Cloud & DevOps:</span></div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span>AWS, Azure, Kubernetes, Docker, Terraform, CI/CD, GitHub Actions</span>
+                        </div>
+                    </div>
 
-   <!-- Contact Section -->
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:samirsanyal312@gmail.com">samirsanyal312@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/samir-sanyal" target="_blank">linkedin.com/in/samir-sanyal</a></p>
-    <p>GitHub: <a href="https://github.com/SamirSanyal312" target="_blank">github.com/SamirSanyal312</a></p>
+                    <div class="skills__subtitle"><span>Programming:</span></div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span>Python, Bash, PowerShell, SQL</span>
+                        </div>
+                    </div>
 
-    <div class="social-links">
-        <a href="https://linkedin.com/in/samir-sanyal" target="_blank" class="social-icon">
-            <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/SamirSanyal312" target="_blank" class="social-icon">
-            <i class="fab fa-github"></i>
-        </a>
-    </div>
-</section>
+                    <div class="skills__subtitle"><span>Monitoring & Security:</span></div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span>Datadog, AWS IAM, Security Best Practices</span>
+                        </div>
+                    </div>
+                </div>
 
+                <div>
+                    <img src="assets/img/skills.jpg" alt="" class="skills__img">
+                </div>
+            </div>
+        </section>
 
+        <!--===== PROJECTS =====-->
+        <section class="work section" id="projects">
+            <h2 class="section-title">Projects</h2>
 
-    <footer>
-        <p>© 2025 Samir Sanyal | All Rights Reserved</p>
+            <div class="work__container bd-grid">
+                <div class="work__item">
+                    <p class="work__title">LAPD Crime Prediction</p>
+                    <a href="https://github.com/SamirSanyal312/LAPD-Crime-Prediction" class="work__img">
+                        <img src="assets/img/project1.png" alt="">
+                    </a>
+                </div>
+                <div class="work__item">
+                    <p class="work__title">Obstacle Detection Car</p>
+                    <a href="https://github.com/SamirSanyal312/ObstacleDetectionCar" class="work__img">
+                        <img src="assets/img/project2.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+
+            <div class="contact-info-container">
+                <p><a href="mailto:samirsanyal312@gmail.com">samirsanyal312@gmail.com</a></p>
+                <p><a href="https://www.linkedin.com/in/samir-sanyal">LinkedIn</a></p>
+                <p><a href="https://github.com/SamirSanyal312">GitHub</a></p>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Samir Sanyal</p>
+        <p class="footer__copy">© 2025 Samir Sanyal | All Rights Reserved.</p>
     </footer>
 
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
