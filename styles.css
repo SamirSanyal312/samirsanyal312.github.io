@@ -1,4 +1,4 @@
-/* Global Styles */
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(to right, #141E30, #243B55);
@@ -8,10 +8,19 @@ body {
     transition: all 0.5s ease;
 }
 
+/* Center Content and Limit Width for Readability */
+section {
+    max-width: 900px; /* Restrict content width */
+    margin: 0 auto; /* Center content horizontally */
+    padding: 60px 20px;
+    text-align: center; /* Center text for headings */
+}
+
 /* Navigation */
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: #1e3a5f;
     padding: 15px;
     position: fixed;
@@ -23,6 +32,7 @@ header {
 nav ul {
     display: flex;
     list-style: none;
+    margin: 0 auto;
 }
 
 nav ul li {
@@ -73,34 +83,33 @@ nav ul li a:hover {
     background: #f4f4f4;
     color: #333;
     padding: 60px 20px;
-    text-align: center;
     border-radius: 50px;
 }
 
-/* Education */
+/* Education Section */
 #education {
     background: white;
     color: #222;
-    padding: 60px 20px;
-    text-align: center;
     border-radius: 50px;
 }
 
-/* Experience */
+/* Experience Section */
 #experience {
     background: #243B55;
     color: white;
-    padding: 60px 20px;
-    text-align: center;
     border-radius: 50px;
+    text-align: left; /* Align text for better readability */
 }
 
-/* Skills */
+.job {
+    text-align: left;
+    padding: 20px;
+}
+
+/* Skills Section */
 #skills {
     background: white;
     color: #222;
-    padding: 60px 20px;
-    text-align: center;
     border-radius: 50px;
 }
 
@@ -122,12 +131,10 @@ nav ul li a:hover {
     color: #FFD700;
 }
 
-/* Projects */
+/* Projects Section */
 #projects {
     background: linear-gradient(135deg, #1e3a5f, #243B55);
     color: white;
-    padding: 60px 20px;
-    text-align: center;
     border-radius: 50px;
 }
 
@@ -156,8 +163,6 @@ nav ul li a:hover {
 #certifications {
     background: white;
     color: #222;
-    padding: 60px 20px;
-    text-align: center;
     border-radius: 50px;
 }
 
@@ -182,8 +187,6 @@ nav ul li a:hover {
 #contact {
     background: #243B55;
     color: white;
-    padding: 60px 20px;
-    text-align: center;
     border-radius: 50px;
 }
 
