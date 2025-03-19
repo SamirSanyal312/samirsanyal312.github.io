@@ -8,167 +8,236 @@
 
 /* 🔹 Body */
 body {
-    background: #ffffff; /* White Background for Modern Look */
-    color: #333; /* Dark text for contrast */
+    background: #f8f9fa;
+    color: #333;
     text-align: center;
-    line-height: 1.6;
-}
-
-/* 🔹 Container */
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
 }
 
 /* 🔹 Navigation */
 header {
-    background: #333;
-    color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #0779e4 3px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-header a {
-    color: #fff;
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #000;
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
-header ul {
-    margin: 0;
-    padding: 0;
+nav ul li a:hover {
+    color: #1e90ff;
 }
 
-header li {
-    float: left;
-    display: inline;
-    padding: 0 20px 0 20px;
+/* 🔹 Hero Section */
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 20px;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
 }
 
-header #branding {
-    float: left;
+/* Hero Left Text */
+.hero-content {
+    max-width: 600px;
 }
 
-header #branding h1 {
-    margin: 0;
-}
-
-header nav {
-    float: right;
-    margin-top: 10px;
-}
-
-header .highlight, header .current a {
-    color: #0779e4;
+.hero-content h1 {
+    font-size: 3rem;
     font-weight: bold;
 }
 
-header a:hover {
-    color: #cccccc;
+.hero-content span {
+    color: #1e90ff;
 }
 
-/* 🔹 Showcase */
-#showcase {
-    min-height: 400px;
-    background: url('../img/showcase.jpg') no-repeat 0 -400px;
-    text-align: center;
-    color: #fff;
+.hero-content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 10px 0 20px;
 }
 
-#showcase h1 {
-    margin-top: 100px;
-    font-size: 55px;
-    margin-bottom: 10px;
+/* 🔹 Hero Profile Pic */
+.hero-img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: #1e90ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-#showcase p {
-    font-size: 20px;
+.hero-img img {
+    width: 90%;
+    border-radius: 50%;
 }
 
-/* 🔹 Newsletter */
-#newsletter {
-    padding: 15px;
-    color: #fff;
-    background: #333;
+/* 🔹 Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #1e90ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
 }
 
-#newsletter h1 {
-    float: left;
+.btn:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-#newsletter form {
-    float: right;
-    margin-top: 15px;
-}
-
-#newsletter input[type="email"] {
-    padding: 4px;
-    height: 25px;
-    width: 250px;
-}
-
-/* 🔹 Boxes */
-#boxes {
+/* 🔹 Social Icons */
+.social-links {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
 }
 
-#boxes .box {
-    float: left;
-    width: 30%;
-    padding: 10px;
+.social-icon {
+    font-size: 30px;
+    color: #000;
+    margin: 0 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    color: #1e90ff;
+    transform: scale(1.2);
+}
+
+/* 🔹 Sections */
+section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
 }
 
-#boxes .box img {
-    width: 90px;
+/* 🔹 Section Headings */
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #1e3a5f;
 }
 
-/* 🔹 Sidebar */
-#sidebar {
-    float: right;
-    width: 30%;
-    margin-top: 10px;
-    padding: 10px;
-    background: #f4f4f4;
+/* 🔹 Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-/* 🔹 Main-col */
-#main-col {
-    float: left;
-    width: 65%;
+.skill-box {
+    background: white;
+    padding: 15px 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* 🔹 Services */
-ul#services li {
-    list-style: none;
+.skill-box:hover {
+    transform: scale(1.05);
+}
+
+/* 🔹 Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+/* Project Card */
+.project {
+    background: white;
     padding: 20px;
-    border: #cccccc solid 1px;
-    margin-bottom: 5px;
-    background: #e6e6e6;
-    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+/* 🔹 Contact Section */
+#contact {
+    background: #f4f4f4;
+    color: #222;
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 20px;
+    max-width: 700px;
+    margin: 50px auto 100px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#contact a {
+    color: #1e3a5f;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+#contact a:hover {
+    color: #FFD700;
 }
 
 /* 🔹 Footer */
 footer {
     padding: 20px;
-    margin-top: 20px;
-    color: #fff;
-    background-color: #333;
+    background: #1e3a5f;
+    color: white;
     text-align: center;
-}
-
-/* 🔹 Media Queries */
-@media(max-width: 768px) {
-    header #branding, header nav, header nav li, #newsletter h1, #newsletter form, #boxes .box, #main-col, #sidebar {
-        float: none;
-        text-align: center;
-        width: 100%;
-    }
-
-    #newsletter form {
-        margin-top: 20px;
-    }
 }
