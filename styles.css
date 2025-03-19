@@ -52,7 +52,8 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: left;
+    flex-direction: column; /* Stack elements properly */
+    text-align: center;
     padding: 120px 20px;
     min-height: 100vh;
 }
@@ -103,12 +104,13 @@ nav ul li a:hover {
     text-decoration: none;
     border-radius: 50px;
     font-weight: bold;
-    transition: 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
     background: #0056b3;
     transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* 🔹 Social Icons */
@@ -130,7 +132,7 @@ nav ul li a:hover {
     transform: scale(1.2);
 }
 
-/* 🔹 About, Experience, Skills Sections */
+/* 🔹 Sections */
 section {
     padding: 80px 20px;
     max-width: 900px;
@@ -143,6 +145,17 @@ h2 {
     font-weight: bold;
     margin-bottom: 20px;
     color: #1e3a5f;
+}
+
+/* 🔹 About, Experience, Skills Sections */
+#about, #experience, #skills, #projects, #certifications {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 80px 20px;
+    border-radius: 20px;
+    max-width: 900px;
+    margin: 50px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* 🔹 Skills */
@@ -163,34 +176,67 @@ h2 {
     color: #0056b3;
 }
 
-/* 🔹 Project Cards */
+/* 🔹 Projects */
 .project {
-    background: #f4f4f4;
+    background: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .project:hover {
     transform: scale(1.05);
 }
 
+/* 🔹 Contact Section */
+#contact {
+    background: #ffffff;
+    color: #222;
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 20px;
+    max-width: 700px; /* Restrict width for better alignment */
+    margin: 50px auto 100px auto; /* Center horizontally & add spacing */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Contact Links */
+#contact p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* 🔹 Contact Links - Modern Colors */
+#contact a {
+    color: #1e3a5f;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+#contact a:hover {
+    color: #FFD700;
+}
+
 /* 🔹 Footer */
 footer {
     padding: 20px;
-    background: #f4f4f4;
-    color: #333;
+    background: #1e3a5f;
+    color: white;
+    text-align: center;
 }
 
-/* 🔹 Initial State (Hidden) */
+/* 🔹 Scroll Animation */
 .hidden {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-/* 🔹 Visible State (When Scrolled) */
 .show {
     opacity: 1;
     transform: translateY(0);
