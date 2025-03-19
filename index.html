@@ -4,64 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samir Sanyal | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> 
 </head>
 <body>
 
+    <!-- Navigation Bar -->
     <header>
-        <img src="profile.jpg" alt="Samir Sanyal" class="profile-pic">
         <h1>Samir Sanyal</h1>
-        <p>Cloud Engineer | Software Developer | DevOps Enthusiast</p>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <button id="dark-mode-toggle">🌙</button>
     </header>
 
+    <!-- Hero Section -->
+    <section id="hero">
+        <img src="images/profile.jpg" alt="Samir Sanyal">
+        <h2>Hi, I'm <span class="highlight">Samir Sanyal</span></h2>
+        <p>Cloud Engineer | DevOps | Software Developer</p>
+        <a href="assets/resume.pdf" class="btn" download>Download Resume</a>
+    </section>
+
+    <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Hi!! My name is Samir Sanyal. I am currently pursuing my Masters in Computer Science from Indiana University Bloomington. Prior to graduate school I used to work as a Cloud Engineer for one of the leading company in the domain of healthcare. I have working experience in AWS and Azure. I have also worked in DevOps and cloud security.</p>
-        <h3>Education</h3>
-        <p><strong>MS in Computer Science</strong> - Indiana University Bloomington (2024 – 2026)</p>
-        <p><strong>BTech in Computer Science</strong> - Vellore Institute of Technology (2017 – 2021)</p>
+        <p>I'm a passionate Computer Science student at Indiana University Bloomington with expertise in cloud computing, DevOps, and automation.</p>
     </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>System Engineer - Dr Lalpathlabs Ltd</h3>
-            <p>August 2021 – May 2024</p>
-            <ul>
-                <li>Optimized AWS & Azure infrastructure, reducing costs by $16,500 annually.</li>
-                <li>Developed Python automation scripts, increasing efficiency by 45%.</li>
-                <li>Implemented CI/CD pipelines, cutting deployment time by 40%.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>Summer Intern - CoreEL Technologies</h3>
-            <p>May 2020 – July 2020</p>
-            <ul>
-                <li>Analyzed MATLAB image processing functions, achieving 85% accuracy.</li>
-            </ul>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <i class="fab fa-aws"></i>
+            <i class="fab fa-docker"></i>
+            <i class="fab fa-python"></i>
+            <i class="fab fa-react"></i>
+            <i class="fab fa-git-alt"></i>
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
         <div class="project">
-            <h3>Fire Alarm Fabrication</h3>
-            <p>Engineered a fire detection system using Arduino, Raspberry Pi, and OpenCV.</p>
+            <h3>Fire Alarm System</h3>
+            <p>Arduino & Raspberry Pi-based fire detection system.</p>
         </div>
         <div class="project">
-            <h3>Obstacle and Object Detection Car</h3>
-            <p>Developed an AI-powered vehicle using TensorFlow and OpenCV for traffic signal recognition.</p>
+            <h3>Obstacle Detection Car</h3>
+            <p>AI-powered vehicle with OpenCV & TensorFlow.</p>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:samirsanyal312@gmail.com">samirsanyal312@gmail.com</a></p>
