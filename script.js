@@ -26,3 +26,21 @@ document.querySelectorAll("nav ul li a").forEach(anchor => {
         target.scrollIntoView({ behavior: "smooth" });
     });
 });
+// Function to reveal elements on scroll
+const scrollElements = document.querySelectorAll(".hidden");
+
+const scrollReveal = () => {
+    scrollElements.forEach((element) => {
+        const elementTop = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (elementTop < windowHeight - 100) {
+            element.classList.add("show");
+        } else {
+            element.classList.remove("show");
+        }
+    });
+};
+
+// Run scrollReveal function when scrolling
+window.addEventListener("scroll", scrollReveal);
